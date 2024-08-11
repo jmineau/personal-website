@@ -1,0 +1,5 @@
+# Ensure the RewriteEngine is turned on
+RewriteEngine On
+
+# Redirect /lair to /lair/latest
+RewriteRule ^lair/?$ /lair/latest [R=301,L]
