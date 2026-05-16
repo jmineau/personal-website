@@ -2,8 +2,7 @@
 
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include 'includes/head-common.php'; ?>
     <title>James Mineau</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -17,7 +16,9 @@
         <ul>
           <li><a href="research.html">research</a></li>
           <li><a href="https://jamesmineau.chpc.utah.edu/lair">lair</a></li>
+          <li><a href="https://jmineau.github.io/stilt">stilt</a></li>
           <li><a href="cv.pdf">cv</a></li>
+        </ul>
       </div>
     </nav>
     <main>
