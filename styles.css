@@ -3,6 +3,81 @@
     padding: 0;
 }
 
+/* Critical layout styles for internal pages */
+.page-shell {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+.page-content {
+    width: min(1100px, 90%);
+    margin: 26px auto 22px;
+    padding: 24px 28px 32px;
+    flex: 1;
+    background: rgba(8, 18, 8, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 14px;
+}
+
+.section-intro h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 70ch;
+}
+
+.content-section {
+    margin: 26px 0;
+}
+
+.content-section h3 {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+    display: block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 18px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.42);
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.45;
+    margin: 0;
+}
+
 .topo-background {
     min-height: 100vh;
     width: 100%;
@@ -13,7 +88,7 @@
 
 nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 18px 6%;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,12 +103,17 @@ nav h1 {
     flex: 1;
     text-align: right;
 }
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
 }
 .nav-links ul li::after {
     content: '';
@@ -42,7 +122,7 @@ nav h1 {
     background: white;
     display: block;
     margin: auto;
-    transition: 0.5s;
+    transition: width 0.25s ease;
 }
 .nav-links ul li:hover::after {
     width: 100%;
@@ -122,4 +202,454 @@ footer a {
 .attribution {
     justify-content: right;
     text-align: right;
+}
+
+.page-shell {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+.page-content {
+    width: min(1100px, 90%);
+    margin: 26px auto 22px;
+    padding: 24px 28px 32px;
+    flex: 1;
+    background: rgba(8, 18, 8, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 14px;
+}
+
+.narrow-content {
+    width: min(900px, 90%);
+}
+
+.section-intro {
+    margin: 0 0 18px;
+}
+
+.section-intro h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 70ch;
+}
+
+.content-section {
+    margin: 26px 0;
+}
+
+.content-section h3 {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 18px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.42);
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.research-page {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 4px auto 18px;
+    padding: 0 4px 20px;
+}
+
+.research-page .section-intro {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.research-page .compact-intro {
+    margin-bottom: 14px;
+}
+
+.research-page .section-intro h2 {
+    font-size: 48px;
+    margin-bottom: 2px;
+}
+
+.research-tagline {
+    margin: 0 auto;
+    max-width: 22ch;
+    font-size: 120px;
+    line-height: 0.98;
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    color: rgba(234, 245, 223, 0.92);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 14px;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+}
+
+.project-media {
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.project-item h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.project-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 2px;
+    padding-top: 2px;
+}
+
+.link-pill {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    color: #f3f8ee;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(214, 235, 194, 0.62);
+    background: rgba(20, 41, 20, 0.62);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.link-pill:hover {
+    background: rgba(41, 76, 37, 0.72);
+    border-color: rgba(221, 243, 201, 0.9);
+    transform: translateY(-1px);
+}
+
+.software-grid {
+    max-width: 1040px;
+}
+
+.software-page {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 4px auto 18px;
+    padding: 0 4px 20px;
+}
+
+.software-page .content-section {
+    margin: 0;
+}
+
+.software-page .section-intro {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.software-intro {
+    margin-bottom: 10px;
+}
+
+.software-intro h2 {
+    margin-bottom: 0;
+}
+
+.software-panel {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.software-item {
+    gap: 10px;
+}
+
+.software-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.software-head h4 a {
+    color: #f3f8ee;
+    text-decoration: none;
+}
+
+.software-title-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.package-icon {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.software-head h4 a:hover {
+    text-decoration: underline;
+}
+
+.software-subtitle {
+    color: rgba(237, 245, 229, 0.92);
+}
+
+.software-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.software-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    font-size: 23px;
+    color: #e4f0d7;
+    text-decoration: none;
+    border-radius: 999px;
+    border: 1px solid rgba(214, 235, 194, 0.5);
+    background: rgba(20, 41, 20, 0.52);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.tile-glyph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 23px;
+    border-radius: 10px;
+    border: 1px solid rgba(214, 235, 194, 0.45);
+    background: rgba(20, 41, 20, 0.58);
+    color: #e4f0d7;
+}
+
+.software-icon-link:hover {
+    background: rgba(41, 76, 37, 0.74);
+    border-color: rgba(221, 243, 201, 0.9);
+    transform: translateY(-1px);
+}
+
+.tag-pill {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    color: rgba(232, 240, 221, 0.92);
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(214, 235, 194, 0.38);
+    background: rgba(20, 41, 20, 0.28);
+}
+
+.research-outputs {
+    margin-top: 28px;
+}
+
+.research-outputs-top {
+    margin: 0 0 22px;
+}
+
+.output-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 26px;
+}
+
+.output-list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.output-list a {
+    color: #eef8de;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.output-list a:hover {
+    text-decoration: underline;
+}
+
+.output-list span {
+    color: rgba(239, 245, 229, 0.9);
+    font-size: 15px;
+}
+
+.pub-list {
+    margin-left: 24px;
+}
+
+.pub-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.image-card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 14px;
+    width: fit-content;
+}
+
+.image-card img {
+    max-width: 220px;
+    height: auto;
+    display: block;
+}
+
+.nav-links ul li.active::after {
+    width: 100%;
+}
+
+.page-shell .footer-content {
+    width: min(1100px, 90%);
+    margin: 0 auto 10px;
+}
+
+@media (max-width: 860px) {
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 6px 0;
+    }
+
+    .landing-content {
+        flex-direction: column-reverse;
+        margin-left: 0;
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .landing-text {
+        width: auto;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .section-intro h2 {
+        font-size: 32px;
+    }
+
+    .research-page .section-intro h2 {
+        font-size: 38px;
+    }
+
+    .research-page .section-intro p {
+        font-size: 18px;
+    }
+
+    .research-tagline {
+        font-size: 72px;
+        line-height: 1.15;
+    }
+
+    .output-list {
+        display: grid;
+        gap: 10px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-item h4 {
+        font-size: 22px;
+    }
+
+    .software-icons {
+        gap: 8px;
+    }
+
+    .page-content {
+        width: min(1100px, 94%);
+        padding: 18px 16px 22px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .attribution {
+        text-align: center;
+    }
 }

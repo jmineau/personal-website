@@ -4,23 +4,11 @@
   <head>
     <?php include 'includes/head-common.php'; ?>
     <title>James Mineau</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260516">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body class="topo-background landing">
-    <nav>
-      <a href="index.html">
-        <h1>James K. Mineau</h1>
-      </a>
-      <div class="nav-links">
-        <ul>
-          <li><a href="research.html">research</a></li>
-          <li><a href="https://jamesmineau.chpc.utah.edu/lair">lair</a></li>
-          <li><a href="https://jmineau.github.io/stilt">stilt</a></li>
-          <li><a href="cv.pdf">cv</a></li>
-        </ul>
-      </div>
-    </nav>
+    <?php $activePage = 'home'; include 'includes/nav.php'; ?>
     <main>
       <div class="landing-content">
         <div class="landing-text">
@@ -35,22 +23,6 @@
         </figure>
       </div>
     </main>
-    <footer class="footer-content">
-      <div class="icons-container">
-        <a class="footer-icon" href="https://github.com/jmineau" target="_blank"><i class="fab fa-github"></i></a>
-        <a class="footer-icon" href="https://linkedin.com/in/james-mineau" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="footer-icon" href="https://orcid.org/0000-0002-2289-2252" target="_blank"><i class="fab fa-orcid"></i></a>
-        <a class="footer-icon" href="mailto:James.Mineau@utah.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-      </div>
-      <div class="footer-text">
-        <div class="footer-textbox"></div>
-        <div class="footer-textbox copyright">
-          <p>&copy; 2024</p>
-        </div>
-        <div class="footer-textbox attribution">
-          <p>Inspired by <a href="https://benfasoli.com/">benfasoli.com</a> & <a href="https://github.com/alshedivat/al-folio\">al-folio</a>.</p>
-        </div>
-      </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
   </body>
 </html>
