@@ -81,8 +81,8 @@
             <article class="project-item software-item">
               <div class="software-head">
                 <h4>
-                  <a class="software-title-link" href="https://jamesmineau.chpc.utah.edu/lair/latest/" target="_blank" rel="noopener noreferrer">
-                    <img class="package-icon" src="lair/latest/_static/lair_fordark_r.png" alt="lair icon">
+                  <a class="software-title-link" href="https://jmineau.github.io/lair/" target="_blank" rel="noopener noreferrer">
+                    <img class="package-icon" src="https://raw.githubusercontent.com/jmineau/lair/main/docs/_static/lair_fordark_r.png" alt="lair icon">
                     <span>lair</span>
                   </a>
                 </h4>
